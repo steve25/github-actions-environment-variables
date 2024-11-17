@@ -28,6 +28,6 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Print name
-      run: echo "Hello $NAME $BUILD. Using Java Version $JAVA_VERSION"
+      run: echo "Hello $NAME $BUILD. Using Java Version $JAVA_VERSION. My API key is ${{secret.API_KEY}}"
       env:
         BUILD: "Its our build"
