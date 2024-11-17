@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  name: 'Steve'
+  NAME: 'Steve'
 
 jobs:
   build:
